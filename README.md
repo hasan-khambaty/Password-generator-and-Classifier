@@ -1,46 +1,75 @@
-This project implements a texture-mapped robot and turret cannon using OpenGL and the stb_image.h library for loading textures. The robot and turret cannon models are rendered with textures applied to their surfaces, controlled through a simple GLUT-based window.
+Password Strength Generator and Classifier
+
+This project is a password strength generator and classifier that helps users generate strong passwords and evaluate the strength of existing passwords using machine learning models.
 
 Features
 
-Texture Mapping: Textures are applied to both the robot and turret cannon using stb_image.h.
+Password Generator: Automatically generates strong passwords with customizable length and character sets.
 
-Key Press Interaction:
+Password Classifier: Classifies password strength as weak, moderate, or strong using a trained machine learning model.
 
-Press S to restart the game and reset the robot and cannon positions.
-Press spacebar to shoot the bullets from the cannon
-The cannon will move from the mouse around the screen
+User-Friendly Interface: Built using Streamlit for an interactive web-based experience.
 
-OpenGL Rendering: The models are rendered using OpenGL primitives with lighting and depth testing enabled.
+Model Integration: Supports multiple classification models, including Logistic Regression, Decision Trees, and Random Forest.
 
-Prerequisites
-
-Ensure you have the following installed:
-
-C++ Compiler (e.g., g++)
-
-OpenGL libraries (freeglut, GL, GLU)
-
-File Structure
-
-main.cpp: Contains the main source code for rendering and handling input.
-
-stb_image.h: Image loading library used for texture loading.
-
-ironman.png: Texture for the robot model.
-
-cannontexture.jpeg: Texture for the turret cannon.
-
-How to Run
+Installation
 
 Clone the repository:
 
-git clone https://github.com/hasan-khambaty/Robot-shooting-game
+git clone https://github.com/hasan-khambaty/Password-generator-and-Classifier
+cd Password-generator-and-Classifier
 
-Compile the program:
+Create a virtual environment (optional but recommended):
 
-g++ main.cpp -lGL -lGLU -lglut -o texture_mapping
+python3 -m venv venv
+source venv/bin/activate
 
-Run the executable:
+Install the required packages:
 
-./texture_mapping
+pip install -r requirements.txt
+
+Usage
+
+Run the Streamlit application:
+
+streamlit run app.py
+
+Open the web app in your browser and:
+
+Generate a strong password using the generator tool.
+
+Test a password's strength using the classifier.
+
+Project Structure
+
+password-strength-classifier/
+├── app.py                 # Main Streamlit web application
+├── models/                # Trained models stored as .pkl files
+├── data/                  # Datasets for training and testing
+├── utils/                 # Utility functions
+├── README.md              # Project documentation
+├── requirements.txt       # Required libraries
+└── notebooks/             # Jupyter notebooks for model development
+
+Model Training
+
+To train a new model:
+
+Prepare the dataset in the data/ folder.
+
+Run the Jupyter notebooks in the notebooks/ directory for feature engineering and model training.
+
+Export the trained model to the models/ folder using joblib.
+
+Technologies Used
+
+Python
+
+Streamlit
+
+Scikit-Learn
+
+Pandas
+
+Joblib
 
