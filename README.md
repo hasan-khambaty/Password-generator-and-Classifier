@@ -17,6 +17,7 @@ Installation
 Clone the repository:
 
 git clone https://github.com/hasan-khambaty/Password-generator-and-Classifier
+
 cd Password-generator-and-Classifier
 
 Create a virtual environment (optional but recommended):
