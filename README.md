@@ -28,7 +28,8 @@ source venv/bin/activate
 
 Install the required packages:
 
-pip install -r requirements.txt
+pip install streamlit
+pip install joblib
 
 Usage
 
