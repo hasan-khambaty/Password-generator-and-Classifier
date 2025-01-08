@@ -47,13 +47,13 @@ Test a password's strength using the classifier.
 Project Structure
 
 password-strength-classifier/
+
 ├── app.py                 # Main Streamlit web application
+
 ├── models/                # Trained models stored as .pkl files
+
 ├── data/                  # Datasets for training and testing
-├── utils/                 # Utility functions
-├── README.md              # Project documentation
-├── requirements.txt       # Required libraries
-└── notebooks/             # Jupyter notebooks for model development
+
 
 Model Training
 
