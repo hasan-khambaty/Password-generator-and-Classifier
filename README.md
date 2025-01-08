@@ -32,6 +32,10 @@ pip install streamlit
 
 pip install joblib
 
+pip install pandas
+
+pip install scikit-Learn
+
 Usage
 
 Run the Streamlit application:
